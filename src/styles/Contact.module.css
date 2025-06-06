@@ -1,0 +1,75 @@
+.contactSection{
+    width: 100%;
+    padding: 4%;
+}
+
+.contactContainer{
+    width: 100%;
+    text-align: center;
+}
+
+.contactContainer span{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+    text-align: center;
+
+} 
+
+.contactContainer .inputContainer{
+    width: 100%;
+    padding: 2%;
+
+    div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4px;
+
+        p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 4rem;
+            font-weight: 500;
+        }
+
+    }
+
+    input, textarea{
+        width: 350px;
+        height: 40px;
+        margin: 8px;
+        outline: none;
+        border: none;
+        border-bottom: solid 1px;
+        margin-left: 5%;
+        padding: 0px 8px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    input::placeholder,
+    textarea::placeholder{
+        color: rgb(193, 193, 193);
+    }
+
+}
+
+.contactSection .btn{
+    width: 100%;
+    padding: 4px 12%;
+
+    button{
+        width: 60%;
+        padding: 10px ;
+        border: none;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        border-radius: 4px;
+        letter-spacing: 2px;
+    }
+
+    button:hover{
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+}
