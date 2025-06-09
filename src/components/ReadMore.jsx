@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Styles from '../styles/ReadMore.module.css'
 
 const ReadMore = ({ text, maxLength = 150 }) => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -8,7 +9,7 @@ const ReadMore = ({ text, maxLength = 150 }) => {
   const displayedText = isExpanded ? text : text.slice(0, maxLength);
 
   return (
-    <p>
+    <p className={Styles.text}>
       {displayedText}
       {!isExpanded && text.length > maxLength && '... '}
       {text.length > maxLength && (
