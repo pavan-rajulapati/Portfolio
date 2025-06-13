@@ -21,7 +21,7 @@ const About = () => {
 							transition={{ duration: 1, ease: 'easeOut' }}
 							viewport={{ once: true, amount: 0.3 }}
 						>
-							<img src="/media/Adobe Express - file (5).png" alt="About" />
+							<img src="https://res.cloudinary.com/dxrfohx12/image/upload/v1749748758/Adobe_Express_-_file_5_bgkvz5.png" alt="About" />
 						</motion.div>
 
 						<div className={Styles.info}>

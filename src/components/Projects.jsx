@@ -1,6 +1,7 @@
 import React from 'react'
 import Styles from '../styles/Projects.module.css'
 import ReadMore from './ReadMore'
+import projects from '../db/projectsData'
 
 const Projects = () => {
   return (
@@ -8,39 +9,19 @@ const Projects = () => {
         <div className={Styles.projectSection} id='projects'>
             <span className={Styles.heading}>Projects</span>
             <div className={Styles.projectContainer}>
-                <div className={Styles.projectCard}>
-                    <div className={Styles.image}>
-                        <img src="public\media\projects\Screenshot 2025-05-30 231458.png" alt="project" />
-                    </div>
-                    <div className={Styles.info}>
-                        <ReadMore text="Built a feature-rich e-commerce platform with distinct user and admin roles. The application supports product listing, cart functionality, order placement, and secure Stripe payment integration. Redis caching is implemented to optimize performance for frequently accessed data such as product listings and user carts. Admins have access to inventory and user management tools. The project focuses on functionality, scalable backend architecture, and smooth payment workflows."></ReadMore>
-                        <div className={Styles.links}>
-                            <a href="/"><button>Github</button></a>
+                {projects.map((data, index) => (
+                    <div className={Styles.projectCard}>
+                        <div key={index} className={Styles.image}>
+                            <img src={data.image} alt="project" />
+                        </div>
+                        <div className={Styles.info}>
+                            <ReadMore text={data.name}></ReadMore>
+                            <div className={Styles.links}>
+                                <a href="/"><button>Github</button></a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className={Styles.projectCard}>
-                    <div className={Styles.image}>
-                        <img src="public\media\projects\image.png" alt="project" />
-                    </div>
-                    <div className={Styles.info}>
-                        <ReadMore text="Built a feature-rich e-commerce platform with distinct user and admin roles. The application supports product listing, cart functionality, order placement, and secure Stripe payment integration. Redis caching is implemented to optimize performance for frequently accessed data such as product listings and user carts. Admins have access to inventory and user management tools. The project focuses on functionality, scalable backend architecture, and smooth payment workflows."></ReadMore>
-                        <div className={Styles.links}>
-                            <a href="/"><button>Github</button></a>
-                        </div>
-                    </div>
-                </div>
-                <div className={Styles.projectCard}>
-                    <div className={Styles.image}>
-                        <img src="public\media\projects\Screenshot 2025-05-30 231458.png" alt="project" />
-                    </div>
-                    <div className={Styles.info}>
-                        <ReadMore text="Built a feature-rich e-commerce platform with distinct user and admin roles. The application supports product listing, cart functionality, order placement, and secure Stripe payment integration. Redis caching is implemented to optimize performance for frequently accessed data such as product listings and user carts. Admins have access to inventory and user management tools. The project focuses on functionality, scalable backend architecture, and smooth payment workflows."></ReadMore>
-                        <div className={Styles.links}>
-                            <a href="/"><button>Github</button></a>
-                        </div>
-                    </div>
-                </div>
+                ))}
             </div>
         </div>
     </div>

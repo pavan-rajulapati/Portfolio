@@ -1,86 +1,135 @@
-.container{
-    width: 100%;
-    padding: 0px 20px;
-    padding-top: 20px;
-    /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLrXLrAQ5XqctG-PqV4lWLu2lsAVuaEWc7Mw&s"); */
-    background-size: cover;
-    background-position: center;
+.container {
+	width: 100%;
+	padding: 0px 20px;
+	padding-top: 20px;
+	/* background-image: url("E:\Final Projects\portfolio\public\media\Remove background project.png"); */
+	background-size: cover;
+	background-position: center;
 }
 
-.heroSection{
-    width: 100%;
-    display: flex;
+.heroSection {
+	width: 100%;
+	display: flex;
 
 }
 
-.infoSection{
-    width: 60%;
-    margin-top: 7%;
-    padding: 8px 20px;
-    display: flex;
-    flex-direction: column;
+.infoSection {
+	width: 60%;
+	margin-top: 7%;
+	padding: 8px 20px;
+	display: flex;
+	flex-direction: column;
 }
 
-.infoSection .heading{
-    font-size: 80px;
-    display: flex;
-    flex-direction: column;
+.infoSection .heading {
+	font-size: 80px;
+	display: flex;
+	flex-direction: column;
 
-    span{
-        font-family: 'Stardom', sans-serif;
-    }
+	span {
+		font-family: 'Stardom', sans-serif;
+	}
 }
 
-.infoSection p{
-    margin-top: 8px;
-    font-size: 17px;
-    display: flex;
-    flex-direction: column;
+.infoSection p {
+	margin-top: 8px;
+	font-size: 17px;
+	display: flex;
+	flex-direction: column;
 
-    span{
-        margin-bottom: 12px;
+	span {
+		margin-bottom: 12px;
 
-        mark{
-            font-weight: bold;
-            font-size: 24px;
-            color: #fdd017;
-            background-color: transparent;
-        }
-    }
+		mark {
+			font-weight: bold;
+			font-size: 24px;
+			color: #fdd017;
+			background-color: transparent;
+		}
+	}
 }
 
-.infoSection .btn{
-    width: 100%;
-    margin-top: 20px;
+.infoSection .btn {
+	width: 100%;
+	margin-top: 20px;
 
-    button{
-        padding: 8px 16px;
-        border: none;
-        border-radius: 4px;
-        background-color: #fdd017;
-        letter-spacing: .5px;
-    }
+	button {
+		padding: 8px 16px;
+		border: none;
+		border-radius: 4px;
+		background-color: #fdd017;
+		letter-spacing: .5px;
+	}
 }
 
-.imageSection{
-    width: 40%;
-    height: 100vh;
-    background-color: transparent;
+.imageSection {
+	width: 40%;
+	height: 100vh;
+	background-color: transparent;
 
-    img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        mix-blend-mode: multiply;
-    }
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		mix-blend-mode: multiply;
+	}
 }
 
-/* .animation1{
-    width: 400px;
-    height: 400px;
-    background-color: rgb(36, 151, 183);
-    position: absolute;
-    top: 10%;
-    z-index: -1;
-    filter: blur(200px);
-} */
+
+@media only screen and (max-width: 786px) {
+	.container {
+		position: relative;
+		overflow: hidden;
+		height: 100vh;
+		padding: 0;
+		margin: 0;
+	}
+
+	.container::before {
+		content: "";
+		position: absolute;
+		top: 120px; 
+		left: 0;
+		width: 100%;
+		height: calc(100vh - 70px); 
+		background-image: url("https://res.cloudinary.com/dxrfohx12/image/upload/v1749748758/Adobe_Express_-_file_3_hl8uqr.png");
+		background-size: cover;
+		background-position: center;
+		z-index: 0;
+	}
+
+	.heroSection {
+		flex-direction: column;
+		position: relative;
+		z-index: 1;
+		height: 100vh;
+		justify-content: flex-start;
+	}
+
+	.infoSection {
+		width: 100%;
+		padding: 16px;
+		text-align: center;
+		align-items: center;
+		position: relative;
+		z-index: 2;
+	}
+
+	.infoSection .heading {
+		position: relative;
+		margin-top: 24px;
+		font-size: 36px;
+		font-weight: 800;
+		color: #000;
+		text-transform: uppercase;
+		z-index: -1;
+	}
+
+	/* Hide non-essential mobile elements */
+	.infoSection p,
+	.infoSection .btn button,
+	.imageSection {
+		display: none;
+	}
+}
+

@@ -33,7 +33,7 @@ const HeroSection = () => {
                     </div>
                 </div>
                 <div className={Styles.imageSection}>
-                    <img src="public/media/Adobe Express - file (3).png" alt="main-image" />
+                    <img src="https://res.cloudinary.com/dxrfohx12/image/upload/v1749748758/Adobe_Express_-_file_3_hl8uqr.png" alt="main-image" />
                 </div>
             </div>
         </motion.div>

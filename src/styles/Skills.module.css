@@ -58,3 +58,33 @@
         margin-top: 4px;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .skillsTitle {
+        font-size: 2.5rem;
+        padding: 0 10px;
+    }
+
+    .skillsGrid {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .skillCard {
+        width: 38%;
+        margin-bottom: 20px;
+    }
+
+
+  .skillCard .imageSection {
+    width: 60px;
+    height: 60px;
+  }
+
+  .skillCard .imageSection p {
+    font-size: 14px;
+  }
+}

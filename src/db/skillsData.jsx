@@ -1,59 +1,59 @@
 const skills = [
     {
         name : "HTML",
-        image : "public/media/skills/html.png"
+        image : "https://res.cloudinary.com/dxrfohx12/image/upload/v1749748471/html_uqeluv.png"
     },
     {
         name : "CSS",
-        image : "public/media/skills/css.png"
+        image : "https://res.cloudinary.com/dxrfohx12/image/upload/v1749748470/css_tccuhu.png"
     },
     {
         name : "Tailwind",
-        image : "public/media/skills/tailwind.png"
+        image : "https://res.cloudinary.com/dxrfohx12/image/upload/v1749748472/tailwind_wcrfrg.png"
     },
     {
         name : "Java Script",
-        image : "public/media/skills/js.png"
+        image : "https://res.cloudinary.com/dxrfohx12/image/upload/v1749748471/js_tvgsra.png"
     },
     {
         name : "React",
-        image : "public/media/skills/react.png"
+        image : "https://res.cloudinary.com/dxrfohx12/image/upload/v1749748472/react_u2fdsi.png"
     },
     {
         name : "Redux",
-        image : "public/media/skills/redux.png"
+        image : "https://res.cloudinary.com/dxrfohx12/image/upload/v1749748472/redux_zszkb9.png"
     },
     {
         name : "Node.js",
-        image : "public/media/skills/nodejs.png"
+        image : "https://res.cloudinary.com/dxrfohx12/image/upload/v1749748471/nodejs_xzotny.png"
     },
     {
         name : "Express.js",
-        image : "public/media/skills/expressjs.png"
+        image : "https://res.cloudinary.com/dxrfohx12/image/upload/v1749748470/expressjs_u1jyx1.png"
     },
     {
         name : "Redis",
-        image : "public/media/skills/redis.webp"
+        image : "https://res.cloudinary.com/dxrfohx12/image/upload/v1749748472/redis_zt37j3.webp"
     },
     {
         name : "MongoDB",
-        image : "public/media/skills/mongodb.webp"
+        image : "https://res.cloudinary.com/dxrfohx12/image/upload/v1749748470/mongodb_zx0ypq.webp"
     },
     {
         name : "Figma",
-        image : "public/media/skills/figma.png"
+        image : "https://res.cloudinary.com/dxrfohx12/image/upload/v1749748470/figma_mrteaf.png"
     },
     {
         name : "Python",
-        image : "public/media/skills/python.png"
+        image : "https://res.cloudinary.com/dxrfohx12/image/upload/v1749748472/python_dx32s0.png"
     },
     {
         name : "Postman",
-        image : "public/media/skills/postman.webp"
+        image : "https://res.cloudinary.com/dxrfohx12/image/upload/v1749748471/postman_hnzptz.webp"
     },
     {
         name : "Git",
-        image : "public/media/skills/git.png"
+        image : "https://res.cloudinary.com/dxrfohx12/image/upload/v1749748471/git_hgsnft.png"
     },
 ]
 
