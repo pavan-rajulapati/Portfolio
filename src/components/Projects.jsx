@@ -1,31 +1,71 @@
 import React from 'react'
 import Styles from '../styles/Projects.module.css'
-import ReadMore from './ReadMore'
 import projects from '../db/projectsData'
+import { motion } from 'framer-motion'
+
+const containerVariants = {
+    hidden: { opacity: 0 },
+    show: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.2,
+            delayChildren: 0.3
+        }
+    }
+}
+
+const cardVariants = {
+    hidden: { opacity: 0, scale: 0.9, y: 30 },
+    show: {
+        opacity: 1,
+        scale: 1,
+        y: 0,
+        transition: { duration: 0.5, ease: 'easeOut' }
+    }
+}
 
 const Projects = () => {
-  return (
-    <div>
+    return (
         <div className={Styles.projectSection} id='projects'>
-            <span className={Styles.heading}>Projects</span>
-            <div className={Styles.projectContainer}>
+            <motion.span
+                className={Styles.heading}
+                initial={{ opacity: 0, y: -20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+            >
+                Projects
+            </motion.span>
+
+            <motion.div
+                className={Styles.projectContainer}
+                variants={containerVariants}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.2 }}
+            >
                 {projects.map((data, index) => (
-                    <div className={Styles.projectCard}>
-                        <div key={index} className={Styles.image}>
-                            <img src={data.image} alt="project" />
+                    <motion.div
+                        key={index}
+                        className={Styles.projectCard}
+                        variants={cardVariants}
+                    >
+                        <div className={Styles.image}>
+                            <img src={data.image} alt={data.name} />
                         </div>
                         <div className={Styles.info}>
-                            <ReadMore text={data.name}></ReadMore>
+                            <span>{data.name}</span>
                             <div className={Styles.links}>
-                                <a href="/"><button>Github</button></a>
+                                <a href={data.link} target="_blank" rel="noopener noreferrer">
+                                    <button>Github</button>
+                                </a>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 ))}
-            </div>
+            </motion.div>
         </div>
-    </div>
-  )
+    )
 }
 
 export default Projects

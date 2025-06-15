@@ -3,7 +3,11 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Times New Roman', Times, serif;
-  cursor: none;
+  cursor: none; 
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body{

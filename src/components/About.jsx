@@ -25,8 +25,9 @@ const About = () => {
 						</motion.div>
 
 						<div className={Styles.info}>
+							<span className={Styles.name}>I'm Pavan Rajulapati 👋,</span>
 							<p>
-								I'm Pavankr Rajulapati, a passionate MERN Stack Developer with a strong foundation in full-stack web development.
+								a passionate MERN Stack Developer with a strong foundation in full-stack web development.
 								I focus on building functional, scalable, and user-friendly applications. I enjoy solving real-world problems with clean code and love turning ideas into reality through my projects.
 								Currently, I’m exploring advanced backend architectures and real-time applications.
 							</p>
