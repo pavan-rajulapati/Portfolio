@@ -12,9 +12,7 @@ const HeroSection = () => {
             <div className={Styles.animation1}>
 
             </div>
-            <div className={Styles.animation2}>
-
-            </div>
+            
             <div className={Styles.heroSection}>
                 <div className={Styles.infoSection}>
                     <div className={Styles.heading}>
@@ -29,11 +27,11 @@ const HeroSection = () => {
                         </p>
                     </div>
                     <div className={Styles.btn}>
-                        <button>Let's Talk</button>
+                        <button onClick={() => window.location.href = "../../public/media/pavanKumar_Resume.pdf"}>Download CV</button>
                     </div>
                 </div>
                 <div className={Styles.imageSection}>
-                    <img src="https://res.cloudinary.com/dxrfohx12/image/upload/v1749748758/Adobe_Express_-_file_3_hl8uqr.png" alt="main-image" />
+                    <img src="https://res.cloudinary.com/dxrfohx12/image/upload/v1750478101/Adobe_Express_-_file_3_mdkjtv.png" />
                 </div>
             </div>
         </motion.div>
