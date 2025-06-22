@@ -19,8 +19,23 @@
 
 } 
 
+.contactContainer .inputContainer input,
+.contactContainer .inputContainer textarea {
+    width: 400px; /* Set a fixed width for consistency */
+    max-width: 100%; /* Prevent overflow */
+    height: 40px;
+    margin: 8px auto; /* Center horizontally */
+    outline: none;
+    border: none;
+    border-bottom: solid 1px;
+    padding: 0px 8px;
+    font-size: 18px;
+    text-align: center;
+    display: block;
+}
+
+
 .contactContainer .inputContainer{
-    width: 100%;
     padding: 2%;
 
     div{
@@ -39,7 +54,6 @@
     }
 
     input, textarea{
-        max-width: 450px;   
         width: 350px;
         height: 40px;
         margin: 8px;
@@ -54,8 +68,8 @@
 
     input::placeholder,
     textarea::placeholder{
-        color: rgb(193, 193, 193);
-    }
+        color: rgb(220, 220, 220);
+    }   
 
 }
 

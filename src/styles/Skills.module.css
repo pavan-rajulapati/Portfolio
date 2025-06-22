@@ -2,9 +2,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-top: 5%;
-    /* color: #fff;
-    background-color: #151515; */
+    padding: 40px 0px;
 }
 
 .skillsTitle{
@@ -22,10 +20,10 @@
     padding: 10px 20px;
 }
 
-.skillCard{
+.skillCard {
     height: auto;
-    border: solid 1px rgb(199, 199, 199);
-    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.2);
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     margin: 20px;
     padding: 12px;
     position: relative;
@@ -34,12 +32,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: .3s ease-in;
+    transition: box-shadow 0.3s ease;
+    transition: all 0.3s ease;
+    transform: translateY(0);
 }
 
-.skillCard:hover{
-    box-shadow: none;
+.skillCard:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
 }
+
 
 
 .skillCard .imageSection{
@@ -66,16 +68,13 @@
     }
 
     .skillsGrid {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 0;
+        justify-content: center;
+        gap: 12px;
     }
 
     .skillCard {
-        width: 38%;
-        margin-bottom: 20px;
+        width: 40%;
+        margin: 10px;
     }
 
 

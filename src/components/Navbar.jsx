@@ -42,11 +42,12 @@ const Navbar = () => {
 										to={link.to}
 										smooth={true}
 										duration={500}
-										offset={-70}
+										offset={-20}
 										spy={true}
 									>
 										{link.label}
 									</Link>
+
 								</motion.li>
 							))}
 						</motion.ul>
