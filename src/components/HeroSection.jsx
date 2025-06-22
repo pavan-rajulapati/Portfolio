@@ -27,7 +27,7 @@ const HeroSection = () => {
                         </p>
                     </div>
                     <div className={Styles.btn}>
-                        <button onClick={() => window.location.href = "../../public/media/pavanKumar_Resume.pdf"}>Download CV</button>
+                        <button onClick={() => window.location.href = "https://drive.google.com/file/d/1-nOrGx4YP0cjC9lmlk_orei13UWAjvl_/view?usp=drive_link"}>Download CV</button>
                     </div>
                 </div>
                 <div className={Styles.imageSection}>

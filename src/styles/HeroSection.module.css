@@ -27,7 +27,8 @@
 	flex-direction: column;
 
 	span {
-		font-family: 'Stardom', sans-serif;
+		font-family: 'Cabinet Grotesk', sans-serif;
+		font-weight: bold;
 	}
 }
 
