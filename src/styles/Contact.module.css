@@ -1,6 +1,9 @@
 .contactSection{
     width: 100%;
     padding: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contactContainer{
@@ -51,7 +54,9 @@
     }
 
     input, textarea{
-       
+        width: 350px;
+        height: 40px;
+        margin: 8px;
         outline: none;
         border: none;
         border-bottom: solid 1px;
