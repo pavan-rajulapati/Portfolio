@@ -17,7 +17,7 @@ const HeroSection = () => {
                 <div className={Styles.infoSection}>
                     <div className={Styles.heading}>
                         <span className={Styles.name}>Hello, I'm</span>
-                        <span className={Styles.name}>Web <>Developer</></span>
+                        <span className={Styles.name}><>Web</> Developer</span>
                     </div>
                     <div>
                         <p> 

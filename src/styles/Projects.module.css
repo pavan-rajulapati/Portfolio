@@ -20,16 +20,12 @@
 .projectCard {
   padding: 24px;
   margin: 12px;
-  border-radius: 12px;
+  border-radius: 4px;
   background-color: #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: solid 1px #ebebeb;
 }
 
-.projectCard:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-}
+
 
 
 .projectCard .image {
@@ -71,6 +67,7 @@
   padding: 6px 42px;
   border: none;
   background-color: #fdd017;
+
   border-radius: 2px;
   letter-spacing: 0.5px;
   font-weight: 500;
@@ -79,7 +76,7 @@
 }
 
 .projectCard .info .links a button:hover {
-  background-color: #e2be0e;
+  background-color: #ffdf3e;
 }
 
 

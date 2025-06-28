@@ -1,5 +1,7 @@
 .container {
 	width: 100%;
+	height: 100vh;
+	overflow: hidden;
 	padding: 0px 20px;
 	padding-top: 20px;
 	/* background-image: url("E:\Final Projects\portfolio\public\media\Remove background project.png"); */
@@ -10,6 +12,7 @@
 .heroSection {
 	width: 100%;
 	display: flex;
+	justify-content: space-between;
 
 }
 
@@ -33,14 +36,15 @@
 }
 
 .infoSection p {
-	margin-top: 8px;
+	margin-top: 6px;
 	font-size: 17px;
 	display: flex;
 	flex-direction: column;
-	color: #5e5e5e;
+	color: #333;
+	line-height: 1.4;
 
 	span {
-		margin-bottom: 12px;
+		margin-bottom: 6px;
 
 		mark {
 			font-weight: bold;
@@ -60,20 +64,36 @@
 		border: none;
 		border-radius: 4px;
 		background-color: #fdd017;
+		/* background-color: black;
+		color: white; */
 		letter-spacing: .5px;
+	}
+
+	button:hover{
+		background-color: #ffda48;
 	}
 }
 
 .imageSection {
 	width: 40%;
-	height: 500px;
-	margin-top: 20px;
+	height: 100vh;
+	margin-top: 24px;
 
 	img {
 		width: 100%;
 		height: 100%;
 		object-fit: contain;
 	}
+}
+
+.animation1{
+	width: 300px;
+	height: 250px;
+	position: absolute;
+	top: 20%;
+	background-color: rgba(255, 238, 0, 0.3);
+	z-index: -1;
+	filter: blur(200px);
 }
 
 
