@@ -18,17 +18,24 @@
 }
 
 .heroSection .content {
+	padding: 0 20px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	width: 100%;
+	max-width: 100%;
+	box-sizing: border-box;
+	overflow-wrap: break-word;
+	text-align: center;
 }
 
 .content span {
-	font-size: clamp(6rem, 24vw, 25rem);
-	display: flex;
-	letter-spacing: -.5px;
+	font-size: clamp(0rem, 22vw, 24rem);
+	letter-spacing: -0.5px;
 	font-weight: 900;
+	display: inline-block;
 }
+
 
 .btn {
 	margin-top: 44px;
