@@ -21,15 +21,15 @@
 
 .contactContainer .inputContainer input,
 .contactContainer .inputContainer textarea {
-    width: 400px; /* Set a fixed width for consistency */
-    max-width: 100%; /* Prevent overflow */
+    width: 400px; 
+    max-width: 100%; 
     height: 40px;
-    margin: 8px auto; /* Center horizontally */
+    margin: 8px auto; 
     outline: none;
     border: none;
     border-bottom: solid 1px;
     padding: 0px 8px;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     display: block;
 }
@@ -62,13 +62,15 @@
         border-bottom: solid 1px;
         margin-left: 5%;
         padding: 0px 8px;
-        font-size: 18px;
         text-align: center;
     }
 
     input::placeholder,
     textarea::placeholder{
         color: rgb(205, 205, 205);
+        text-transform: capitalize;
+        font-size: 16px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }   
 
 }

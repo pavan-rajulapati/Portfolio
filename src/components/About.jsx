@@ -10,7 +10,7 @@ const About = () => {
 			<div className={Styles.aboutSection} id='about'>
 				<div className={Styles.aboutContainer}>
 					<div className={Styles.heading}>
-						<p>ABOUT ME</p>
+						<p>about me</p>
 					</div>
 					<div className={Styles.infoSection}>
 						{/* Animate image on scroll into view */}

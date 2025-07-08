@@ -2,13 +2,15 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Times New Roman', Times, serif;
   cursor: none; 
 }
 
-body{
+body {
   cursor: none;
+  font-family: 'Cabinet Grotesk', sans-serif;
+  letter-spacing: 0.02em;
 }
+
 
 li{
   list-style-type: none;
@@ -16,4 +18,8 @@ li{
 
 a {
   text-decoration: none;
+}
+
+p{
+  letter-spacing: .5px;
 }

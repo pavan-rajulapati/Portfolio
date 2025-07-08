@@ -12,9 +12,11 @@
 }
 
 .projectSection .heading {
-	font-size: 4.5rem;
-	letter-spacing: 2px;
+	font-size: 2rem;
+	font-weight: 600;
 	text-align: center;
+	letter-spacing:-0.25px;
+	text-transform: capitalize;
 }
 
 .projectCard {

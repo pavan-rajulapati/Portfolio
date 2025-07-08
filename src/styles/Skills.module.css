@@ -6,10 +6,11 @@
 }
 
 .skillsTitle{
-    font-size: 5rem;
+    font-size: 2rem;
     text-align: center;
-    letter-spacing: 2px;
-    font-weight: 100;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing:-0.25px;
 }
 
 .skillsGrid{
