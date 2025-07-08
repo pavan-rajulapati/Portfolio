@@ -3,180 +3,77 @@
 	height: 100vh;
 	overflow: hidden;
 	padding: 0px 20px;
-	padding-top: 20px;
-	/* background-image: url("E:\Final Projects\portfolio\public\media\Remove background project.png"); */
+	padding-top: 5%;
+	color: white;
+	background-image: url('https://res.cloudinary.com/dxrfohx12/image/upload/v1751994206/solid-concrete-wall-textured-background_1_il6ji2.jpg');
 	background-size: cover;
-	background-position: center;
 }
 
 .heroSection {
-	width: 100%;
+	height: 100%;
 	display: flex;
-	justify-content: space-between;
-
-}
-
-.infoSection {
-	width: 60%;
-	margin-left: 4%;
-	display: flex;
+	flex-direction: column;
+	align-items: center;
 	justify-content: center;
-	flex-direction: column;
-	color: #1a1a1a;
-	font-family: 'Cabinet Grotesk', sans-serif;
 }
 
-.infoSection .heading {
-	font-size: 5rem;
+.heroSection .content {
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 20px;
-	letter-spacing: -0.5px;
-	line-height: 1.2;
-	font-weight: 700;
+	align-items: center;
 }
 
-.infoSection .heading span {
-	font-weight: 800;
-	color: #111; 
-
-	p {
-	font-size: 5rem;
-	line-height: normal;
-	font-weight: 700;
-	background: linear-gradient(to right, #f4c430, #ffcd3c, #fbd85d);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	color: transparent;
-	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
-	letter-spacing: -0.5px;
+.content span {
+	font-size: clamp(6rem, 24vw, 25rem);
+	display: flex;
+	letter-spacing: -.5px;
+	font-weight: 900;
 }
 
-}
-
-.infoSection p {
-	font-size: 1.125rem; 
-	line-height: 1.7;
-	letter-spacing: 0.3px;
-	color: #444; 
-	max-width: 90%;
-}
-
-.infoSection p span {
-	display: block;
-	margin-bottom: 6px;
-	font-weight: 500;
-}
-
-.infoSection p mark {
-	font-weight: 700;
-	font-size: 20px;
-	color: #fdd017;
-	background-color: transparent;
-	letter-spacing: 0.5px;
-}
-
-.infoSection .btn {
+.btn {
+	margin-top: 44px;
+	margin-right: 42px;
 	width: 100%;
-	margin-top: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
 }
 
-.infoSection .btn button {
-	padding: 10px 20px;
+.btn button {
+	padding: 12px 36px;
+	background-color: black;
+	color: white;
+	letter-spacing: .5px;
+	border-radius: 24px;
+	font-weight: 600;
 	border: none;
-	border-radius: 6px;
-	background-color: #F4C430;
-	letter-spacing: 0.7px;
-	font-weight: 400;
-	color: #000;
-	transition: background-color 0.3s ease;
 	cursor: pointer;
+	transition: all 0.3s ease;
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-.infoSection .btn button:hover {
-	background-color: #ffda48;
+.btn button:hover {
+	background-color: #222;
+	box-shadow: 0px 6px 24px rgba(0, 0, 0, 0.3);
 }
 
-
-.imageSection {
-	width: 40%;
-	height: 100vh;
-	margin-top: 24px;
-
-	img {
-		width: 100%;
-		height: 100%;
-		object-fit: contain;
-	}
-}
-
-.animation1{
-	width: 300px;
-	height: 250px;
-	position: absolute;
-	top: 20%;
-	background-color: rgba(255, 238, 0, 0.3);
-	z-index: -1;
-	filter: blur(200px);
-}
-
-
-
-
-@media only screen and (max-width: 786px) {
+@media (max-width: 768px) {
 	.container {
-		position: relative;
-		overflow: hidden;
-		height: 100vh;
-		padding: 0;
-		margin-top: -40px;
+		height: 80vh;
 	}
 
-	.container::before {
-		content: "";
-		position: absolute;
-		top: 120px; 
-		left: 0;
-		width: 100%;
-		height: calc(100vh - 70px); 
-		background-image: url("https://res.cloudinary.com/dxrfohx12/image/upload/v1749748758/Adobe_Express_-_file_3_hl8uqr.png");
-		background-size: cover;
-		background-position: center;
-		z-index: 0;
+	.btn {
+		justify-content: center;
+		margin-right: 0;
+		margin-top: 32px;
 	}
 
-	.heroSection {
-		flex-direction: column;
-		position: relative;
-		z-index: 1;
-		height: 100vh;
-		justify-content: flex-start;
+	.btn button {
+		width: auto;
+		padding: 10px 28px;
 	}
 
-	.infoSection {
-		width: 100%;
-		padding: 16px;
+	.content span {
 		text-align: center;
-		align-items: center;
-		position: relative;
-		z-index: 2;
-	}
-
-	.infoSection .heading {
-		position: relative;
-		margin-top: 24px;
-		font-size: 36px;
-		font-weight: 800;
-		color: #000;
-		text-transform: uppercase;
-		z-index: -1;
-	}
-
-	/* Hide non-essential mobile elements */
-	.infoSection p,
-	.infoSection .btn button,
-	.imageSection {
-		display: none;
 	}
 }
-

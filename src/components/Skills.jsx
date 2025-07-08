@@ -45,6 +45,7 @@ const Skills = () => {
                         className={Styles.skillCard}
                         key={index}
                         variants={cardVariants}
+                         whileHover={{ y: -8 }}
                     >
                         <div className={Styles.imageSection}>
                             <img src={skill.image} alt={skill.name} width={100} />

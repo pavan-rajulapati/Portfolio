@@ -56,6 +56,9 @@ const Projects = () => {
                         <div className={Styles.info}>
                             <span>{data.name}</span>
                             <div className={Styles.links}>
+                                <a href={data.live} target="_blank" rel="noopener noreferrer">
+                                    <button>Live</button>
+                                </a>
                                 <a href={data.link} target="_blank" rel="noopener noreferrer">
                                     <button>Github</button>
                                 </a>

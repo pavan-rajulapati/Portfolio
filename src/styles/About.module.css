@@ -1,5 +1,4 @@
 .aboutSection {
-	/* border: solid 1px; */
 	padding: 4%;
 }
 
@@ -65,7 +64,7 @@
 }
 
 .infoSection .links {
-	margin-top: 20px;
+	margin-top: 24px;
 	display: flex;
 
 	div {
@@ -74,9 +73,9 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			background-color: #fdd017;
-			border: none;
-			border-radius: 4px;
+			background-color: black;
+			color: white;
+			border-radius: 24px;
 			letter-spacing: .5px;
 
 			svg {
@@ -87,7 +86,7 @@
 		}
 
 		button:hover{
-			background-color: #ffdc50;
+			background-color: #333;
 		}
 	}
 

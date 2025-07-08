@@ -24,6 +24,14 @@ const skills = [
         image : "https://res.cloudinary.com/dxrfohx12/image/upload/v1749748472/redux_zszkb9.png"
     },
     {
+        name : "Typescript",
+        image : "https://res.cloudinary.com/dxrfohx12/image/upload/v1751967959/typescript_wactrh.png"
+    },
+    {
+        name : "Next JS",
+        image : "https://res.cloudinary.com/dxrfohx12/image/upload/v1751967991/nextjs-light_mv4atr.png"
+    },
+    {
         name : "Node.js",
         image : "https://res.cloudinary.com/dxrfohx12/image/upload/v1749748471/nodejs_xzotny.png"
     },

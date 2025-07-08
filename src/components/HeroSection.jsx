@@ -9,22 +9,14 @@ const HeroSection = () => {
                 animate={{ opacity: 1, translateX: 0 }}
                 transition={{ duration: 2 }}
                 className={Styles.container} id='home'>
-                <div className={Styles.animation1}>
-
-                </div>
-
                 <div className={Styles.heroSection}>
-                    <div className={Styles.infoSection}>
-                        <div className={Styles.heading}>
-                            <span className={Styles.name}>Hello, I'm</span>
-                            <span className={Styles.name}><p>Web Developer</p></span>
-                        </div>
-                        <div className={Styles.btn}>
-                            <button onClick={() => window.location.href = "https://drive.google.com/file/d/1-nOrGx4YP0cjC9lmlk_orei13UWAjvl_/view?usp=drive_link"}>Download CV</button>
-                        </div>
+                    <div className={Styles.content}>
+                        <span>Portfolio</span>
                     </div>
-                    <div className={Styles.imageSection}>
-                        <img src="https://res.cloudinary.com/dxrfohx12/image/upload/v1750478101/Adobe_Express_-_file_3_mdkjtv.png" />
+                    <div className={Styles.btn}>
+                        <a href="https://drive.google.com/file/d/1-nOrGx4YP0cjC9lmlk_orei13UWAjvl_/view?usp=sharing" download>
+                            <button>View CV</button>
+                        </a>
                     </div>
                 </div>
             </motion.div>

@@ -23,8 +23,8 @@
 
 .skillCard {
     height: auto;
-    border: 1px solid #e0e0e0;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #efefef;
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); */
     margin: 20px;
     padding: 12px;
     position: relative;
@@ -35,12 +35,10 @@
     align-items: center;
     transition: box-shadow 0.3s ease;
     transition: all 0.3s ease;
-    transform: translateY(0);
 }
 
 .skillCard:hover {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-    transform: translateY(-2px);
 }
 
 
