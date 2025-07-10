@@ -14,7 +14,7 @@ const HeroSection = () => {
                         <span>Portfolio</span>
                     </div>
                     <div className={Styles.btn}>
-                        <a href="https://drive.google.com/file/d/1-nOrGx4YP0cjC9lmlk_orei13UWAjvl_/view?usp=sharing" download>
+                        <a href="https://drive.google.com/file/d/1WH57DnwUU8vaA_fj8gwdLXHPUm0bw10J/view?usp=sharing" download>
                             <button>View CV</button>
                         </a>
                     </div>
