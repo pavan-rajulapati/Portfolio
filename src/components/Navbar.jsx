@@ -15,7 +15,7 @@ const containerVariants = {
 	show: {
 		opacity: 1,
 		transition: {
-			staggerChildren: 0.2, // Time between each child animation
+			staggerChildren: 0.2, 
 		},
 	},
 }
